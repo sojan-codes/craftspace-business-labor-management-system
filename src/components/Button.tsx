@@ -4,14 +4,17 @@ import type { ReactNode } from "react";
 
 type ButtonProps = Omit<HTMLMotionProps<"button">, "children"> & {
   children: ReactNode;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "accept";
   size?: "sm" | "md" | "lg";
 };
+
+
 
 const variants = {
   primary: "bg-white text-zinc-950 shadow-[0_18px_50px_rgba(255,255,255,0.16)] hover:bg-zinc-200",
   secondary: "border border-white/10 bg-white/[0.06] text-white hover:bg-white/[0.1]",
   ghost: "text-zinc-300 hover:bg-white/[0.08] hover:text-white",
+  accept: "border border-white/10 bg-white text-black hover:bg-white/85",
 };
 
 const sizes = {

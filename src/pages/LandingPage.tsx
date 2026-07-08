@@ -20,8 +20,8 @@ export function LandingPage() {
       <section className="fine-grid relative min-h-[92vh] px-4 pb-16 pt-6 sm:px-6 lg:px-8">
         <nav className="mx-auto flex max-w-7xl items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-white font-bold text-zinc-950">B</div>
-            <span className="font-semibold">BLMS</span>
+            <div className="grid h-10 w-10 place-items-center rounded-xl bg-white font-bold text-zinc-950">C</div>
+            <span className="font-semibold">CraftSpace</span>
           </div>
           <div className="hidden rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-sm text-zinc-300 sm:block">Business-Labor Management System</div>
         </nav>
@@ -37,12 +37,12 @@ export function LandingPage() {
               A modern workforce management platform connecting businesses with skilled workers across labor-intensive industries.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="min-h-16 px-8 text-lg" onClick={() => navigate("/business")}>
+              <Button size="lg" className="min-h-16 px-8 text-lg cursor-pointer" onClick={() => navigate("/business")}>
                 <Factory size={22} />
                 Business Portal
                 <ArrowRight size={20} />
               </Button>
-              <Button size="lg" variant="secondary" className="min-h-16 px-8 text-lg" onClick={() => navigate("/labor")}>
+              <Button size="lg" variant="secondary" className="min-h-16 px-8 text-lg cursor-pointer" onClick={() => navigate("/labor")}>
                 <Hammer size={22} />
                 Labor Portal
                 <ArrowRight size={20} />
@@ -110,8 +110,8 @@ export function LandingPage() {
 
       <footer className="px-4 py-10 text-sm text-zinc-500 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 sm:flex-row">
-          <p>BLMS. Frontend-only startup MVP.</p>
-          <p>Designed for worker assignments, production tracking, and material flow.</p>
+          <p>Team CraftSpace</p>
+          <p>© 2026 CraftSpace. All rights reserved.</p>
         </div>
       </footer>
     </div>

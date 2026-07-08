@@ -24,10 +24,10 @@ export function MyJobsPage() {
               <ProgressBar value={job.progress} />
             </div>
             <div className="mt-6 grid grid-cols-2 gap-2">
-              <Button variant="secondary" size="sm">Accept</Button>
-              <Button variant="ghost" size="sm">Reject</Button>
-              <Button variant="secondary" size="sm">Update Progress</Button>
-              <Button variant="secondary" size="sm">View Details</Button>
+              <Button variant="accept" size="sm" className="cursor-pointer">Accept</Button>
+              <Button variant="secondary" size="sm" className="cursor-pointer">Reject</Button>
+              <Button variant="secondary" size="sm" className="cursor-pointer">Update Progress</Button>
+              <Button variant="secondary" size="sm" className="cursor-pointer">View Details</Button>
             </div>
           </div>
         ))}

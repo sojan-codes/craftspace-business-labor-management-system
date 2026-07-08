@@ -31,7 +31,7 @@ export function AppShell({ nav, portal }: { nav: NavItem[]; portal: "Business" |
               <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">{portal} Portal</p>
               <p className="text-sm text-zinc-300">Business-labor production workspace</p>
             </div>
-            <div className="hidden rounded-full border border-white/10 bg-white/[0.05] px-3 py-1.5 text-sm text-zinc-300 sm:block">Frontend MVP</div>
+            <div className="hidden rounded-full border border-white/10 bg-white/[0.05] px-3 py-1.5 text-sm text-zinc-300 sm:block">Team CraftSpace</div>
           </header>
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <Outlet />
@@ -48,9 +48,9 @@ function Sidebar({ nav, portal, mobile, onNavigate }: { nav: NavItem[]; portal: 
     <aside className={`${mobile ? "h-full" : "fixed hidden h-screen lg:flex"} w-72 flex-col border-r border-white/10 bg-zinc-950/94 p-4`}>
       <div className="flex items-center justify-between">
         <button onClick={() => navigate("/")} className="flex items-center gap-3 rounded-xl p-2 text-left transition hover:bg-white/[0.06]">
-          <div className="grid h-10 w-10 place-items-center rounded-xl bg-white text-sm font-bold text-zinc-950">B</div>
-          <div>
-            <p className="font-semibold">BLMS</p>
+          <div className="grid h-10 w-10 place-items-center rounded-xl bg-white text-sm font-bold text-zinc-950">C</div>
+          <div className="cursor-pointer">
+            <p className="font-semibold">CraftSpace</p>
             <p className="text-xs text-zinc-500">{portal} Portal</p>
           </div>
         </button>
@@ -83,9 +83,9 @@ function Sidebar({ nav, portal, mobile, onNavigate }: { nav: NavItem[]; portal: 
           onNavigate?.();
           navigate(logoutItem.path);
         }}
-        className="mt-4 flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-zinc-400 transition hover:bg-white/[0.07] hover:text-white"
+        className="mt-4 flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-zinc-400 transition hover:bg-white/[0.07] hover:text-white cursor-pointer"
       >
-        <logoutItem.icon size={18} />
+        <logoutItem.icon size={18}/>
         {logoutItem.label}
       </button>
     </aside>
